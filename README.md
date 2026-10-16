@@ -2,11 +2,11 @@
 
 An interactive research webpage using all 649 original records in UCI Student Performance's `student-por.csv`. The primary predictor is categorical weekly study time and the outcome is final Portuguese grade G3 (0–20). Numeric-code simple linear regression is a sensitivity analysis. Past failures are an exploratory predictive comparison, not a demonstrated causal influence.
 
-The website runs as static HTML, CSS and JavaScript, without external scripts, accounts, or a backend. `dist/index.html` is the entry point. The application recalculates regressions, F tests, confidence intervals and predictor rankings for the visible filters. Cross-validation and random-forest results are explicitly fixed full-sample reference analyses from the downloadable executed notebook.
+The website runs as static HTML, CSS and JavaScript, without external scripts, accounts, or a backend. `docs/index.html` is the entry point. The application recalculates regressions, F tests, confidence intervals and predictor rankings for the visible filters. Cross-validation and random-forest results are explicitly fixed full-sample reference analyses from the downloadable executed notebook.
 
 Data source: Cortez (2008), UCI Student Performance, https://doi.org/10.24432/C5TG7T, CC BY 4.0. Original CSV SHA-256: `a7594a11d7771c0efe1a740824e0e833da9c4cad07c39a9766a874575563fb3f`.
 
-Resources in `dist/downloads/` include the exact CSV, one-page executive summary, four-page System Maps and Justification report, executed Colab-compatible notebook, analysis code, source data dictionary and downloadable website source. No generated 100-student dataset is used.
+Resources in `docs/downloads/` include the exact CSV, one-page executive summary, four-page System Maps and Justification report, executed Colab-compatible notebook, analysis code, source data dictionary and downloadable website source. No generated 100-student dataset is used.
 
 Run the notebook in Google Colab by downloading it and using File > Upload notebook. It contains the original data and requires no Drive connection or separate CSV upload.
 
@@ -22,8 +22,8 @@ Run `node scripts/verify_final.cjs` for CSV and presentation regressions. Valida
 
 ## Publish on GitHub Pages
 
-The public repository is https://github.com/eunsulee07/acdt-group33 . Its root is prepared for static publication. The connected editing tools cannot enable Pages settings. The owner must open Settings > Pages, choose Deploy from a branch, select main and /(root), then Save.
+The public repository is https://github.com/eunsulee07/acdt-group33 . Its root is prepared for static publication. The connected editing tools cannot enable Pages settings. The owner must open Settings > Pages, choose Deploy from a branch, select main and /docs, then Save.
 
 After GitHub reports a successful deployment, the site should be available at https://eunsulee07.github.io/acdt-group33/ . This URL is an expected destination until Pages has been enabled and verified; uploading code alone does not establish that the site is live.
 
-In this exported repository, open index.html or serve the root directory. In the original Sites checkout, the same files are in dist/.
+In this repository, open docs/index.html or serve the docs directory. The GitHub Pages source is main /docs.
